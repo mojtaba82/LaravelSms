@@ -7,7 +7,7 @@ For install this package Edit your project's ```composer.json``` file to require
 
 ```php
 "require": {
-  "pamenary/LaravelSms": "dev-master"
+  "mojtaba82/laravel-sms": "dev-master"
 },
 ```
 
@@ -37,7 +37,8 @@ Usage
 -----
 ### Send Message
 ```php
-Sms::sendSMS(['09136000415', '09361265987'], 'text mesage'); // send message for persons
+$sms = new Sms();
+sms->sendSMS(['09136000415', '09361265987'], 'text mesage'); // send message for persons
 ```
 ### Change Gateway
 
