@@ -37,6 +37,9 @@ Usage
 -----
 ### Send Message
 ```php
+use Pamenary\LaravelSms\Sms;
+```
+```php
 $sms = new Sms();
 sms->sendSMS(['09136000415', '09361265987'], 'text mesage'); // send message for persons
 ```
